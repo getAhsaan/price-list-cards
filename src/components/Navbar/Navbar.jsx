@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from '../Link/Link';
+import { Bars3Icon } from '@heroicons/react/24/solid'
 
 const Navbar = () => {
     const routes = [
@@ -8,11 +10,12 @@ const Navbar = () => {
         { id: 4, name: 'Products', path: '/products' },
         { id: 5, name: 'Product Details', path: '/products/:id' },
     ];
-
+  
     return (
         <div>
-            <ul>
-                {routes.map(route=><li>{route.name}</li>)}
+            <ul className='md:flex'>
+                <Bars3Icon className="h-6 w-6 text-purple-500" />
+                {routes.map(route => <Link key={route.id} route={route}></Link>)}
             </ul>
         </div>
     );
