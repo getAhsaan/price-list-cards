@@ -16,7 +16,11 @@ const Navbar = () => {
     return (
         <nav className='bg-purple-400'>
             <div onClick={() => setOpen(!open)} className='cursor-pointer md:hidden'>
-                <span>{open ? <Bars3Icon className="h-6 w-6 text-purple-500" /> : <XMarkIcon className="h-6 w-6 text-purple-500" />}</span>
+                <span>
+                    {
+                        open ? <XMarkIcon className="h-6 w-6 text-purple-500" /> : <Bars3Icon className="h-6 w-6 text-purple-500" />
+                    }
+                </span>
             </div>
             <ul className={`md:flex absolute md:static duration-500 bg-purple-400 p-8 ${open ? 'top-6' : '-top-96'}`}>
                 {routes.map(route => <Link key={route.id} route={route}></Link>)}

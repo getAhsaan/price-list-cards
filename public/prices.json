@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Fitness First",
+      "features": ["24/7 Access", "Group Classes", "Sauna"],
+      "price": 40
+    },
+    {
+      "id": 2,
+      "name": "Gold's Gym",
+      "features": ["Personal Training", "lorem ipsum1", "lorem ipsum 3", "Swimming Pool", "Weightlifting Equipment"],
+      "price": 50
+    },
+    {
+      "id": 3,
+      "name": "Planet Fitness",
+      "features": ["No Lunk Alarm", "lorem ipsum", "Tanning", "Massage Chairs"],
+      "price": 20
+    }
+  ]
+  
